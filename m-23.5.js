@@ -103,17 +103,56 @@ const num3 = 6;
 const multiOfNum = num1 * num2 * num3;
 //  console.log(multiOfNum);
 function multiplication(number1, number2, number3) {
-  sum = number1 * number2 * number3;
-  return sum;
+    sum = number1 * number2 * number3;
+    return sum;
 }
 const result = multiplication(4, 5, 7);
 console.log('multiplication result:', result);
 
 
 /* 12. object declaration and property value change*/
-const  eidShopping = {
+const eidShopping = {
     panjabi: 720,
-    pant : 1390,
-    shipt : 570,
+    pant: 1390,
+    shipt: 570,
 }
 console.log(eidShopping)
+
+/*  problem solving */
+// 1. feet to inch  ** 1 foot = 12 inch
+function FootToInch(feet) {
+    const inches = feet * 12;
+    return inches;
+}
+
+const lengthInFeet = 2;
+const lengthInInches = FootToInch(lengthInFeet);
+console.log('result in inches:', lengthInInches)
+
+// 2. centimeter to meter /* 1 meter = 100 centimeter  */
+
+function centimeterToMeter(centimeters) {
+    const meter = centimeters / 100;
+    return meter;
+}
+
+const lengthInCentimeter = 3200;
+const lengthInMeter = centimeterToMeter(lengthInCentimeter);
+console.log('length in meter:', lengthInMeter);
+
+// 3. paper requirement
+
+function paperRequirements(copyOfBook1, copyOfBook2, copyOfBook3) {
+    const paperForBook1 = 100;
+    const paperForBook2 = 200;
+    const paperForBook3 = 300;
+
+    const totalPaperForBook1 = copyOfBook1 * 100;
+    const totalPaperForBook2 = copyOfBook2 * 200;
+    const totalPaperForBook3 = copyOfBook3 *300;
+     
+    const totalPaperForAllBook = totalPaperForBook1 + totalPaperForBook2 + totalPaperForBook3;
+    return totalPaperForAllBook
+}
+const totalPaper = paperRequirements(2, 4, 5);
+console.log('total paper number for all books :', totalPaper)
