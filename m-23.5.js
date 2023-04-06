@@ -156,3 +156,25 @@ function paperRequirements(copyOfBook1, copyOfBook2, copyOfBook3) {
 }
 const totalPaper = paperRequirements(2, 4, 5);
 console.log('total paper number for all books :', totalPaper)
+
+/* 4. return largest name of a friend from an array */
+const nameOfFriends = ['sagor', 'momin', 'shamim', 'shakib', 'mustafizur', 'sakib', 'azizul', 'motiour'];
+
+
+function bestFriend (nameOfFriends) {
+    var longestName = nameOfFriends[0].length;
+    var ans = nameOfFriends[0];
+
+    for( let i = 0; i < nameOfFriends.length; i++){
+        
+    var element= nameOfFriends[i].length;
+    if (element > longestName) {
+        ans = nameOfFriends[i];
+        longestName = element;
+    }
+  }
+  return ans;
+} 
+console.log(bestFriend( nameOfFriends))
+// const  friendName = bestFriend(nameOfFriends);
+// console.log('longest name of friend:', friendName)
