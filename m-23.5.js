@@ -178,3 +178,16 @@ function bestFriend (nameOfFriends) {
 console.log(bestFriend( nameOfFriends))
 // const  friendName = bestFriend(nameOfFriends);
 // console.log('longest name of friend:', friendName)
+
+
+/* 5. find only positive from an array *///not solved
+const numeric = [22, 1, 83, 0 , -32, 44, -63, 51];
+let numResult = [];
+for(let i =0; i < numeric.length; i++){
+    const numer = numeric[i]
+    if(numer <= 0){break;}
+    numResult = numer
+    console.log(numer)
+    return numResult;
+}
+      console.log(numResult)
