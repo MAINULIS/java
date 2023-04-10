@@ -6,7 +6,7 @@ const product = [{name: 'phone', price:21000},
 // console.log(product);
 // console.log(product[0])
 
-// object like array
+// array like object. it is an object
 const products = {
     '0':12,
     '1': 32,
